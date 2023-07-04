@@ -35,21 +35,23 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Hi, my name is Andreas, I'm building serverless and open source
-					solutions at{" "}
+					Hi, my name is Vivek, I'm a astrophysics research and freelancing 
+					projects at{" "}
 					<Link
 						target="_blank"
-						href="https://upstash.com"
+						href="https://www.upwork.com"
 						className="underline duration-500 hover:text-zinc-300"
-					>
+					>   
+						
+						
 						Upstash
 					</Link>
 
 					<br />
-					and working on{" "}
+					and {" "}
 					<Link
 						target="_blank"
-						href="https://planetfall.io"
+						href="https://feverr.com"
 						className="underline duration-500 hover:text-zinc-300"
 					>
 						planetfall.io

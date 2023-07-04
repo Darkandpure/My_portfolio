@@ -29,7 +29,7 @@ export default function Home() {
 				quantity={100}
 			/>
 			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-				chronark
+				Darkandpure
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -39,24 +39,24 @@ export default function Home() {
 					projects at{" "}
 					<Link
 						target="_blank"
-						href="https://www.upwork.com"
+						href="https://www.upwork.com/freelancers/vivekjyotib"
 						className="underline duration-500 hover:text-zinc-300"
 					>   
 						
 						
-						Upstash
+						Upwork
 					</Link>
 
 					<br />
 					and {" "}
 					<Link
 						target="_blank"
-						href="https://feverr.com"
+						href="https://www.fiverr.com/darkandpure/fine-tune-llms-with-small-customer-datasets-conversational-ai-expert?context_referrer=subcategory_listing&source=pagination&ref_ctx_id=aaba4a87f66b329f86759481e6ded92d&pckg_id=1&pos=42&context_type=rating&funnel=aaba4a87f66b329f86759481e6ded92d&seller_online=true&imp_id=3f5a69a7-a283-411d-8693-fb77d7ff5520"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						planetfall.io
+						Feverr
 					</Link>{" "}
-					at night.
+					
 				</h2>
 			</div>
 		</div>

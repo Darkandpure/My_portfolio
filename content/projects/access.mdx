@@ -1,7 +1,7 @@
 ---
-title: "machine_learning_projects"
-description: A minimal library for access control. It is designed to be used together with opaque access tokens by providing a simple interface to define roles with different access permissions and verifying requests to resources.
-repository: darkandpure/machine-learning 
+title: "ML_projects"
+description:You can find machine learning project like Google stock Prediction, unsupervised learning model for fast radio bursts etc. 
+repository: darkandpure/Machine-learning-
 date: "2023-07-06"
 published: true
   
@@ -34,57 +34,18 @@ This repository contains a collection of my machine learning projects, showcasin
 
 ## Usage
 
-```ts
-import { AccessControl, Role } from "@chronark/access";
+```Navigate to the project directory you are interested in: cd machine-learning-projects/[project-name]
 
-/**
- * Define all your resources and their access patterns
- *
- * key => resource
- * value => array of access types
- */
-type Statements = {
-  user: ["read", "write", "dance"];
-  team: ["read", "write"];
-};
+Open the Jupyter notebook or execute the Python script:
+- Jupyter notebook: `jupyter notebook [notebook-name].ipynb`
+- Python script: `python [script-name].py`
+Feel free to explore each project and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out.
+```
+## License
 
-/**
- * Create an access control instance and pass the Statements type to enjoy full
- * type safety
- */
-const ac = new AccessControl<Statements>();
+```This project is licensed under the [License Name]. See the LICENSE file for more details.
 
-/**
- * Now you can define one or more roles by specifying the access permissions
- *
- * This is already fully typed and typescript will let you know if you try to
- * use anything, that is not defined in the Statements type.
- */
-const role = ac.newRole({
-  user: ["read", "write"],
-  team: ["read"],
-});
+You can customize the repository structure, add more projects, and include additional sections based on your specific requirements. Don't forget to update the `darkandpure` with your GitHub username and provide the appropriate license information.
 
-/**
- * Simulate storing and retrieving the role in a database
- *
- * The idea here is, that you can store permissions alongside an API token.
- * Now, when you verify the token, you can also verify the access permissions.
- */
-const serialized = role.toString();
-
-/**
- * Note how you can pass in the Statements type again, to get full type safety
- */
-const recovered = Role.fromString<Statements>(serialized);
-
-/**
- * Validate the role by specifying the resource and the required access
- *
- * everything is fully typed
- */
-const res = recovered.authorize({"team", ["read"]});
-
-// res.success => boolean
-// res.error => string | undefined provides a reason for failure
+Hope this helps you set up your machine learning project repository on GitHub!
 ```
